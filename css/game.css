@@ -1,0 +1,73 @@
+.gameover{
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.score-bar-tog{
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  color: white;
+  font-size: 110px;
+}
+
+#timer{
+  display: none;
+}
+
+#score_f{
+  font-size: 90px;
+  color: white;
+}
+
+#game-over{
+  display: none;
+  background: #3e206d;
+  margin: 0;
+  height: 100vh;
+}
+
+#play-game{
+  background-color: #f0e3ff;
+  height: 100vh;
+}
+
+.play-area{
+  cursor: default;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.score-bar{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background: #3e206d;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.invisible-button{
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+.live-score{
+  color: white;
+  font-size: 35px;
+}
+
+#canvas{
+  cursor: crosshair;
+}

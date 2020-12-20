@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>gAIMing</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/aboutUs.css">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+  function store_message(){
+    var form_name=document.getElementById('Name').value;
+    var form_email=document.getElementById('email').value;
+    var form_comment=document.getElementById('comment').value;
+    sessionStorage.setItem("form_name", form_name);
+    sessionStorage.setItem("form_email", form_email);
+    sessionStorage.setItem("form_comment", form_comment);
+    console.log(name);
+  }
+  </script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">g<span style="color:red;">AiM</span>ing</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-outline-light">Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="playnow.html"><button type="button" class="btn btn-outline-light">Play Now</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><button type="button" class="btn btn-outline-light">About Us</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <h2 style="text-align:center;">About Us</h2><br>
+      <div class="row">
+
+        <div class="col-lg-6">
+
+
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="card" style="width: 18rem; height:22rem">
+                  <img class="card-img-top" src="images/protyush.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">PROO-007</h5>
+                    <!-- <p class="card-text">The proest of the proest of the proestness</p> -->
+                  </div>
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">PICT, Pune</li>
+                    <li class="list-group-item">TE,IT</li>
+                    <li class="list-group-item">WEB Developer</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="flip-box-back">
+                <h2>Back Side</h2>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="col-lg-6">
+
+
+          <div class="flip-box myAlignCard">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="card" style="width: 18rem; height:22rem">
+                  <img class="card-img-top" src="images/protyush.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">PROO-007</h5>
+                    <!-- <p class="card-text">The proest of the proest of the proestness</p> -->
+                  </div>
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">PICT, Pune</li>
+                    <li class="list-group-item">TE,IT</li>
+                    <li class="list-group-item">WEB Developer</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="flip-box-back">
+                <h2>Back Side</h2>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features -->
+
+  <!-- <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">User Friendly</h3>
+          <p>Easy to use, and all options available at a glance.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-crosshairs fa-4x"></i>
+          <h3 class="feature-title">Test your AIM</h3>
+          <p>Battle against time to get your higscore.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-users fa-4x"></i>
+          <h3 class="feature-title">Invite Buddies</h3>
+          <p>Play single player or invite your friends for multiplayer.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section> -->
+
+
+  <!-- Testimonials -->
+
+  <!-- <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Pro lvl game i like game very much.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Noob lvl game and i dont like game.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section> -->
+
+
+  <!-- Press -->
+
+  <!-- <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section> -->
+
+
+  <!-- Pricing -->
+
+  <!-- <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section> -->
+
+
+  <!-- Call to Action -->
+
+  <!-- <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section> -->
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <h1>Connect with us</h1>
+      <form class="form-group" action="" method="post" onsubmit="store_message();send();">
+
+        <div class="common">
+          <label for="Name">Name</label>
+          <input class="form-control" onfocusout="validate2()" onfocus="validate_2()" type="text" id="Name" name="" value="" placeholder="Name">
+          <p class="validation02" id="validation02">Please Enter valid Name</p>
+        </div>
+
+        <div class="common">
+          <label for="email">Email</label>
+          <input class="form-control" onfocusout="validate1()" onfocus="validate_1()" type="email" id="email" name="" value="" placeholder="Email">
+          <p class="validation01" id="validation01">Please Enter valid Email</p>
+        </div>
+
+        <div class="common">
+          <label for="comment">Message</label>
+          <textarea class="form-control" onfocusout="validate3()" onfocus="validate_3()" id="comment" rows="4" placeholder="Message"></textarea>
+          <p class="validation03" id="validation03">Please Enter a valid Message</p>
+        </div>
+
+        <div class="center" style="text-align:center">
+          <button type="submit" class="btn btn-danger" name="button" id="submit">Submit</button>
+        </div>
+
+      </form>
+      <br><br>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 gAIMing</p>
+    </div>
+  </footer>
+
+  <script src="js/form.js" charset="utf-8"></script>
+  <script src="js/formSend.js" charset="utf-8"></script>
+</body>
+
+</html>

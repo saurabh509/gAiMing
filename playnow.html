@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>gAIMing</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    function store_name(){
+      var name=document.getElementById('user').value;
+      var level=document.getElementById('diff').value;
+      sessionStorage.setItem("name", name);
+      sessionStorage.setItem("level", level);
+      console.log(name);
+    }
+  </script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html">g<span style="color:red;">AiM</span>ing</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><button type="button" class="btn btn-outline-light">Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="playnow.html"><button type="button" class="btn btn-outline-light">Play Now</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><button type="button" class="btn btn-outline-light">About Us</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+
+      <div class="userdetails">
+
+        <h1 style="padding-bottom: 4%; font-family: 'Orbitron', sans-serif;">SET YOUR G<span style="color: red">AiM</span>E UP SOLDIER</h1>
+
+        <form class="" action="game.html" method="post" onsubmit="store_name()">
+
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div>
+                <label for="user" class="diff-label">Username: </label>
+                <p class="hvr-underline-from-center">
+                  <input id="user" class="username" type="text" name="username" style="color: white; font-size: 20px" value="" placeholder="Enter your Username" autocomplete="off" required>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div>
+                <label for="diff" class="diff-label">Difficulty: </label>
+                <select id="diff" class="difficulty" name="difficulty">
+                  <option value="1">Beginner</option>
+                  <option value="2">Amateur</option>
+                  <option value="3">Professional</option>
+                  <option value="4">Insane</option>
+                </select>
+
+              </div>
+            </div>
+
+          </div><br>
+
+          <a href="game.html" style="text-decoration: none">
+          <a href="game.html" style="text-decoration: none"><button type="submit" class="btn btn-outline-light btn-lg playnow-button hvr-shutter-in-vertical"><i class="fa fa-gamepad"></i>Play Now</button></a>
+          </a>
+
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 gAIMing</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
